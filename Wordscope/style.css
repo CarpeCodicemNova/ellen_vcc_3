@@ -1,25 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lora", serif;
+  background: #fefdfd;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 50px auto;
   text-align: center;
+  color: #333;
+}
+
+h1 {
+  color: #a47764;
+  font-size: 36px;
+}
+
+p {
+  color: #555;
 }
 
 textarea {
   width: 100%;
   height: 200px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
+  font-family: "Lora", serif;
+  border-radius: 8px;
+  border: 1px solid #c19d96;
 }
 
 .stats {
   margin-top: 20px;
   font-size: 18px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #c19d96;
 }
 
 button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background: #c19d96;
+  color: white;
+  cursor: pointer;
+  font-family: "Lora", serif;
+}
+
+button:hover {
+  background: #a47764;
 }
