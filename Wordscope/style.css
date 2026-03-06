@@ -1,46 +1,89 @@
 body {
   font-family: "Lora", serif;
-  background: #fefdfd;
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
+  background: linear-gradient(to bottom, #fefdfd, #f8f2f0);
+  margin: 0;
+  padding: 40px 20px;
   color: #333;
+}
+
+.app-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e7d7d2;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(164, 119, 100, 0.12);
+  padding: 35px;
+  text-align: center;
 }
 
 h1 {
   color: #a47764;
-  font-size: 36px;
+  font-size: 2.4rem;
+  margin-bottom: 8px;
 }
 
-p {
-  color: #555;
+.tagline {
+  color: #7a675f;
+  margin-bottom: 24px;
+  font-size: 1.05rem;
 }
 
 textarea {
   width: 100%;
-  height: 200px;
-  margin-top: 20px;
-  padding: 12px;
-  font-size: 16px;
+  min-height: 220px;
+  padding: 14px;
+  font-size: 1rem;
   font-family: "Lora", serif;
-  border-radius: 8px;
   border: 1px solid #c19d96;
+  border-radius: 12px;
+  resize: vertical;
+  box-sizing: border-box;
+  background: #fffdfc;
+  color: #333;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #a47764;
+  box-shadow: 0 0 0 3px rgba(193, 157, 150, 0.2);
 }
 
 .stats {
-  margin-top: 20px;
-  font-size: 18px;
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #c19d96;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.stat-box {
+  background: #fcf8f7;
+  border: 1px solid #e4d2cd;
+  border-radius: 14px;
+  padding: 16px 20px;
+  min-width: 160px;
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #7a675f;
+}
+
+.stat-number {
+  margin: 8px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #a47764;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  font-size: 16px;
-  border-radius: 6px;
+  margin-top: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 10px;
   border: none;
   background: #c19d96;
   color: white;
@@ -50,4 +93,18 @@ button {
 
 button:hover {
   background: #a47764;
+}
+
+@media (max-width: 640px) {
+  .app-card {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .stat-box {
+    min-width: 100%;
+  }
 }

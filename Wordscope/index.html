@@ -2,29 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordScope</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="app-card">
+    <h1>WordScope</h1>
+    <p class="tagline">A simple word counter for writers.</p>
 
-<h1>WordScope</h1>
-<p>A simple word counter for writers.</p>
+    <textarea id="textInput" placeholder="Paste or type your text here..."></textarea>
 
-<textarea id="textInput" placeholder="Paste or type your text here..."></textarea>
+    <div class="stats">
+      <div class="stat-box">
+        <p class="stat-label">Words</p>
+        <p class="stat-number" id="wordCount">0</p>
+      </div>
 
-<div class="stats">
-  <p>Words: <span id="wordCount">0</span></p>
-  <p>Characters: <span id="charCount">0</span></p>
-  <p>Characters (no spaces): <span id="charNoSpaces">0</span></p>
-</div>
+      <div class="stat-box">
+        <p class="stat-label">Characters</p>
+        <p class="stat-number" id="charCount">0</p>
+      </div>
 
-<button onclick="clearText()">Clear</button>
+      <div class="stat-box">
+        <p class="stat-label">No Spaces</p>
+        <p class="stat-number" id="charNoSpaces">0</p>
+      </div>
+    </div>
 
-<script src="script.js"></script>
+    <button onclick="clearText()">Clear</button>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
